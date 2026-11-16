@@ -73,6 +73,7 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: zigbee-watermeter-firmware
+          retention-days: 2
           path: |
             build/watermeter.bin
             build/partition_table/partition-table.bin
